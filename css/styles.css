@@ -12,6 +12,7 @@ body {
 }
 
 header {
+  font-family: "Shadows Into Light", cursive;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -39,6 +40,12 @@ button {
   padding: 5px;
   border-radius: 5px;
   height: 2rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(255, 0, 0);
+  box-shadow: 0px 0px 5px blue;
 }
 .ingresoDatos {
   background-color: black;
@@ -46,6 +53,7 @@ button {
   margin-bottom: 10px;
   display: flex;
   position: sticky;
+  z-index: 1000;
   top: 10px;
   box-shadow: 0px 0px 20px gray;
 }
@@ -59,6 +67,7 @@ button {
   color: white;
   gap: 20px;
   padding: 10px;
+  font-family: "Shadows Into Light", cursive;
 }
 
 .buscadorEjercicio {
@@ -116,6 +125,8 @@ label {
   align-items: right;
 }
 .ejercicio {
+  font-family: "Shadows Into Light", cursive;
+  font-size: 1.5rem;
   color: white;
   border-radius: 10px;
   box-shadow: 0px 0px 20px red;
@@ -132,6 +143,15 @@ label {
 .imagenX {
   width: 20px;
   height: 20px;
+}
+
+.imagenM {
+  width: 50px;
+  height: 50px;
+}
+.imagenV {
+  width: 30px;
+  height: 30px;
 }
 
 ul {
@@ -224,7 +244,11 @@ footer {
     gap: 20px;
   }
   .imagenX {
-    width: 50px;
+    width: 40px;
+    height: 40px;
+  }
+  .imagenV {
     height: 50px;
+    width: 50px;
   }
 }
