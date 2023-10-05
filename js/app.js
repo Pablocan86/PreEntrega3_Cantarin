@@ -84,12 +84,12 @@ btnAgregaEjercicio.addEventListener("click", function () {
   const indice = ejerciciosBD.findIndex((el) => el.nombre === ejercicio);
   //Renderizo en la sección de rutina asi se visualizan los ejercicios
   seccionRutina.innerHTML += `<div class="ejercicio">
-  <div class="divMusculo"><img class="imagenX" src="./img/${ejerciciosBD[indice].imagen}" alt="icono video"/>  
-  <p>${ejerciciosBD[indice].musculo}</p></div>
-    <div class="divNombre"><p class="nombreEjercicio">${ejerciciosBD[indice].nombre}</p>
-    <p>SERIES: ${series.value}   REPETICIONES: ${repeticiones.value}</p></div>   
-    <div class="divBotones"><a href="${ejerciciosBD[indice].video}" target="_blank"><img class="imagenX" src="./img/video.png" alt="icono video"/></a>
-    <a href="#" class="btnQuitar" data-id="${ejerciciosBD[indice].id}"><img class="imagenX" src="./img/cerrar.png" alt="icono de una x"/></a></div>
+  <img class="imagenX" src="./img/${ejerciciosBD[indice].imagen}" alt="icono video"/>  
+  <p>${ejerciciosBD[indice].musculo}</p>
+    <p>${ejerciciosBD[indice].nombre}</p>
+    <p>SERIES: ${series.value}   REPETICIONES: ${repeticiones.value}</p>   
+    <a href="${ejerciciosBD[indice].video}" target="_blank"><img class="imagenX" src="./img/video.png" alt="icono video"/></a>
+    <a href="#" class="btnQuitar" data-id="${ejerciciosBD[indice].id}"><img class="imagenX" src="./img/cerrar.png" alt="icono de una x"/></a>
   </div>`;
   //Pusheo el array de ejercicioRutina para tener una lista guardada
   ejerciciosRutina.push(ejerciciosBD[indice]);
