@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Panel Entrenador - Armado rutinas</title>
+  </head>
+  <body id="body">
+    <header id="header">
+      <div><img src="" alt="" />LOGO</div>
+      <h2>PANEL ENTRENADOR</h2>
+    </header>
+    <main id="main">
+      <section id="sectionPrimera" class="ingresoDatos">
+        <article id="formularioRutinas">
+          <div class="inputDias">
+            <label for="dias">DIA</label>
+            <input class="inputNumeros" id="dias" type="number" />
+            <button id="btnDia">AGREGAR DIA</button>
+          </div>
+          <div class="buscadorEjercicio">
+            <label for="inputBuscar">EJERCICIO</label>
+            <input id="inputBuscador" type="text" />
+            <div id="resultados"></div>
+          </div>
+          <div class="seriesYReps">
+            <div class="seriesYRep">
+              <label for="series">SERIES</label>
+              <input class="inputNumeros" id="series" type="number" />
+            </div>
+            <div>
+              <label for="repeticiones">REPETICIONES</label>
+              <input class="inputNumeros" id="repeticiones" type="number" />
+            </div>
+          </div>
+          <button id="btnAgregaEjercicio">AGREGAR EJERCICIO</button>
+        </article>
+      </section>
+      <section id="rutina">
+        <!--  -->
+        <!--AQUI SE CARGARAN LOS DIAS Y EJERCICIOS-->
+      </section>
+    </main>
+    <footer>
+      <button id="btnGuardarRutina">GUARDAR RUTINA</button>
+      <button id="btnBorrarRutina">BORRAR RUTINA</button>
+    </footer>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
